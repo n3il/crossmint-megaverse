@@ -49,7 +49,7 @@ def recreate_expected_goal_map(client: MegaverseAPI) -> None:
     logging.info("🎯 Fetching goal map...")
     goal_map = client.get_goal_map()
 
-    logging.info(f"🔭 Calculating the known edges of the megaverse: \
+    logging.info(f"🔭 Calculating extents of the megaverse: \
       {len(goal_map)}x{len(goal_map[0])}")
 
     logging.info("💫 Begin megaverse exploration...")
